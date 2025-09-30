@@ -21,7 +21,7 @@ local client = Mongo.new({
   Timeout = 30,
 
   EnableRateLimiter = true,
-  MaxRequestsPerMinute = 60,
+  MaxRequestsPerMinute = 500,
   MaxConcurrent = 5,
 
   EnableRetry = true,
@@ -59,3 +59,4 @@ for _, doc in ipairs(result.data or {}) do
 end
 
 ```
+
