@@ -6,7 +6,7 @@ A straightforward Lua client for MongoDB Atlas data api (deprecated) check out n
 
 ## Installation
 
-Copy the module into your project and require it or use wally to install it as package:
+Copy the module into your project and require it:
 
 ```lua
 local HttpService = game:GetService("HttpService")
@@ -57,4 +57,5 @@ local result = client:Find("users", { active = true }, {
 for _, doc in ipairs(result.data or {}) do
   print(doc.email)
 end
+
 ```
