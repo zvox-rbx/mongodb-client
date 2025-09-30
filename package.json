@@ -1,0 +1,37 @@
+{
+  "name": "mongodb-network-layer",
+  "version": "1.0.0",
+  "description": "Professional MongoDB Atlas Data API replacement",
+  "main": "src/NetworkLayer.ts",
+  "module": "src/NetworkLayer.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch src/NetworkLayer.ts",
+    "start": "bun run src/NetworkLayer.ts",
+    "build": "bun build src/NetworkLayer.ts --outdir ./dist --target node",
+    "test": "bun run src/NetworkLayer.ts"
+  },
+  "dependencies": {
+    "mongodb": "^6.3.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^20"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mongodb", 
+    "database", 
+    "api", 
+    "network-layer",
+    "atlas-data-api"
+  ],
+  "author": "Dawid",
+  "license": "MIT"
+}
