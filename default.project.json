@@ -1,0 +1,6 @@
+{
+	"name": "mongodb-client",
+	"tree": {
+		"$path": "src"
+	}
+}
